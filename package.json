@@ -1,0 +1,37 @@
+{
+  "name": "vanillajsslider",
+  "version": "1.0.0",
+  "description": "simple js slider leveraging html5 css3 es6",
+  "main": "index.js",
+  "dependencies": {
+    "terser": "^3.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.2.1",
+    "css-loader": "^2.1.0",
+    "lightercollective": "^0.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production --config prod.webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payouri/vanillaJSSlider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/payouri/vanillaJSSlider/issues"
+  },
+  "homepage": "https://github.com/payouri/vanillaJSSlider#readme"
+}

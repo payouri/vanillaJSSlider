@@ -1,0 +1,45 @@
+@import "node_modules/bootstrap/scss/functions";
+@import 'node_modules/bootstrap/scss/_variables.scss';
+
+[data-module='slider'] {
+    background: $light;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px 0px $gray-500;
+    
+    // box-shadow: 0 0 4px 1px #000;
+    [data-area='images-container'] {
+        overflow: visible !important;
+        padding: 0;
+    }
+    [data-area='controls'] {
+        height: auto;
+        padding: $spacer 0;
+        width: 100%;
+        background: transparent;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+        // [data-image]
+        [data-type='indicator'] {
+            background: $gray-500;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.15s linear;
+            width: 40px;
+            height: 10px;
+            border-radius: 4px;
+            margin: 0 $spacer;
+            will-change: width;
+
+            &[data-status='active'] {
+                background: $primary;
+                opacity: 1;
+            }
+        }
+    }
+}

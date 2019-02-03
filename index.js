@@ -1,0 +1,2 @@
+import VanillaCarousel from './src';
+
